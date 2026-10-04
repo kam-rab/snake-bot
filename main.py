@@ -21,7 +21,7 @@ for i in range(0, 10):
     nums.append(np.array(Image.open(ASSETS / "digits" / f"{i}.png")))
 snake_loc = [(16, 8), (15, 8), (14, 8), (13, 8), (12, 8)]
 moves = [(16, 9), (17, 9), (17, 10)]
-tileTime = 0.13499991665  # 0.13   0.1349950   0.1350117   0.1350052, 10336, 11288
+tileTime = 0.13499991665  
 apple = (16, 8)
 prev_apple = (16, 8)
 run_astar = False
@@ -166,7 +166,7 @@ def find_board():
 
 def press_key(key, tiles):
     global t
-    t += (tiles * tileTime)  # 0.12958538
+    t += (tiles * tileTime) 
     if tiles > 2:
         time.sleep(0.75 * (t + start - perf_counter()))
     while time.perf_counter() < t + start:
@@ -498,7 +498,7 @@ def everything():
     time.sleep(1)
     start = perf_counter()
     press_key("d", 2)
-    press_key("s", (1.5649948 / tileTime))  # used to be 1.68461/tileTime   1.5649948
+    press_key("s", (1.5649948 / tileTime))  
     snake()
 
 
