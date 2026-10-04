@@ -6,7 +6,9 @@ Welcome to my snake bot! It's made for the Google Play snake game. Just open the
 
 - macOS (uses `pyobjc` for screen capture and keyboard input)
 - Python 3.12
-- The Google snake game on its default settings (default board size and speed), since the path is hardcoded for the default board
+- The Google snake game on its default settings, since the bot is hardcoded for them:
+  - Default board size and speed
+  - Blue snake, green background, and red apple
 - The game visible on your main monitor
 
 ## Setup
